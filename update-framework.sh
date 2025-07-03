@@ -173,6 +173,15 @@ mkdir -p "$workspace_dir/Sources"
 cp -R "$src_dir/Sources/"* "$workspace_dir/Sources/"
 echo "✅ Copied all source files"
 
+# Copy LICENSE file
+echo "Copying LICENSE file..."
+if [ -f "$src_dir/LICENSE" ]; then
+    cp "$src_dir/LICENSE" "$workspace_dir/LICENSE"
+    echo "✅ Copied LICENSE file"
+else
+    echo "Warning: LICENSE file not found in source code"
+fi
+
 # Copy XCFrameworks directory
 echo "Copying XCFrameworks directory..."
 rm -rf "$workspace_dir/Frameworks/XCFrameworks"
@@ -392,11 +401,6 @@ if [ "$NEED_REGENERATE" = true ] || [ "$FORCE_REGENERATE" = true ]; then
     # Remove trailing comma and close the array
     CHECKSUMS_JSON=${CHECKSUMS_JSON%,}
     CHECKSUMS_JSON+="]"
-    
-    # Clean up Frameworks directory after zipping
-    echo "Cleaning up Frameworks directory..."
-    rm -rf "$XCFRAMEWORK_DIR"
-    echo "✅ Removed Frameworks directory"
 else
     # Use existing checksums
     CHECKSUMS_JSON=$EXISTING_CHECKSUMS_JSON
@@ -450,9 +454,15 @@ if [ "$NEED_REGENERATE" = true ] || [ "$FORCE_REGENERATE" = true ]; then
     rm -rf $XCFRAMEWORK_DIR/Carthage
     rm -f $TEMP_DIR/Braintree.xcframework.zip
     echo "✅ Cleanup complete. Only zipped frameworks and XCFrameworks directory remain."
-fi 
+fi
 
 # Final cleanup - remove entire temp directory
 echo "Cleaning up temporary files..."
 rm -rf "$TEMP_DIR"
-echo "✅ Cleanup complete" 
+
+# Clean up Frameworks directory after zipping
+echo "Cleaning up Frameworks directory..."
+rm -rf "$XCFRAMEWORK_DIR"
+echo "✅ Removed Frameworks directory"
+
+echo "✅ Cleanup complete"
