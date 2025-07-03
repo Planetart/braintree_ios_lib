@@ -1,0 +1,19 @@
+{
+  "name": "braintree-ios-spm-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Braintree iOS SPM",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js",
+    "dev": "nodemon mcp-server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

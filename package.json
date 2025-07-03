@@ -1,0 +1,98 @@
+{
+  "name": "braintree_ios_spm",
+  "version": "6.32.0",
+  "description": "Braintree iOS SDK Swift Package Manager distribution",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelLedger/braintree_ios_spm.git"
+  },
+  "keywords": [
+    "braintree",
+    "ios",
+    "spm",
+    "xcframework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelLedger/braintree_ios_spm/issues"
+  },
+  "homepage": "https://github.com/MichaelLedger/braintree_ios_spm#readme",
+  "braintree": {
+    "version": "6.32.0",
+    "url": "https://github.com/braintree/braintree_ios/releases/download/6.32.0/Braintree.xcframework.zip",
+    "mainChecksum": "981ff21b963a908002b05a1eb9288f597bfac1b1cc4012681beaa2f0285f5722",
+    "frameworks": [
+      {
+        "name": "BraintreeAmericanExpress",
+        "checksum": "9ea85ac9bc14a9145627d4cdc24a7d49604a93516813fc551d97bd21624b0464"
+      },
+      {
+        "name": "BraintreeApplePay",
+        "checksum": "d1189fa0ffb4c025c7e8df8f02499d40e465f30fb58743e010d62b25da89589a"
+      },
+      {
+        "name": "BraintreeCard",
+        "checksum": "ecb7db8f4dd98ec874828beef422418aaf9a75fdee038407c2cace4fa4e8d41c"
+      },
+      {
+        "name": "BraintreeCore",
+        "checksum": "2653651e78a1613901cb6807031757779e405c6961fd4cdaec60f40cc743946a"
+      },
+      {
+        "name": "BraintreeDataCollector",
+        "checksum": "68d0b77784a14b08c0b8a0585ec8a11185aaa24c0fbe237949088c66075d3e24"
+      },
+      {
+        "name": "BraintreeLocalPayment",
+        "checksum": "520467c5abd38e872b774b09a88ed762905597c434c5850a561d038c80eb576b"
+      },
+      {
+        "name": "BraintreePayPal",
+        "checksum": "be939185a544d8345abc2f9d38c695de8ab29aeb44fbaa9b2c51b23c445ee125"
+      },
+      {
+        "name": "BraintreePayPalMessaging",
+        "checksum": "801da612dff077bc0e320699e3645fc5aee9be9c617c6f711248e2b06f692fef"
+      },
+      {
+        "name": "BraintreePayPalNativeCheckout",
+        "checksum": "e2d1c149b0775ce9999523dcc314a56f9dd242afe36243e29dd3d322c3539719"
+      },
+      {
+        "name": "BraintreeSEPADirectDebit",
+        "checksum": "046a72d6cc455ade4653c4a2023c53b931db27f24e65782d00be7a21ac431c2b"
+      },
+      {
+        "name": "BraintreeShopperInsights",
+        "checksum": "5386c795a93f8c4d075cd4de4fe17048085fd4434535085d94c175e0bff9ba8a"
+      },
+      {
+        "name": "BraintreeThreeDSecure",
+        "checksum": "830aff61abd7789a548f4c612265e5a902a5a95466087e16e02768b4b2666156"
+      },
+      {
+        "name": "BraintreeVenmo",
+        "checksum": "984cf40757c750e70c551d1a64f2ed566aa8b8541467d812c33b3a061ad82ee5"
+      },
+      {
+        "name": "CardinalMobile",
+        "checksum": "e109400127174bb15fde0ca1257deda4ff94acca8e0ad1891ff758650d676b95"
+      },
+      {
+        "name": "PPRiskMagnes",
+        "checksum": "ce92a1a59d793ec076e895503371d4f67b088daac1a1e6c3cb7eeaff44406e5b"
+      },
+      {
+        "name": "PayPalMessages",
+        "checksum": "565ab72a3ab75169e41685b16e43268a39e24217a12a641155961d8b10ffe1b4",
+        "url": "https://github.com/paypal/paypal-messages-ios/releases/download/1.0.0/PayPalMessages.xcframework.zip"
+      },
+      {
+        "name": "PayPalCheckout",
+        "checksum": "d65186f38f390cb9ae0431ecacf726774f7f89f5474c48244a07d17b248aa035",
+        "url": "https://github.com/paypal/paypalcheckout-ios/releases/download/1.3.0/PayPalCheckout.xcframework.zip"
+      }
+    ]
+  }
+}
