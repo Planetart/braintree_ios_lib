@@ -66,6 +66,23 @@ echo "Requested Braintree SDK version: $BRAINTREE_VERSION"
 # Create directories if they don't exist
 mkdir -p $XCFRAMEWORK_DIR $TEMP_DIR $ZIP_DIR
 
+# Check if version has changed
+CURRENT_VERSION=""
+VERSION_CHANGED=false
+if [ -f "package.json" ]; then
+    if command -v node &> /dev/null; then
+        CURRENT_VERSION=$(node -e "try { const pkg = require('./package.json'); console.log(pkg.braintree?.version || ''); } catch(e) { console.log(''); }")
+    else
+        # Fallback to grep if node is not available
+        CURRENT_VERSION=$(grep -o '"version": "[^"]*"' package.json | head -1 | cut -d'"' -f4)
+    fi
+fi
+
+if [ "$CURRENT_VERSION" != "$BRAINTREE_VERSION" ]; then
+    VERSION_CHANGED=true
+    echo "Version changed from $CURRENT_VERSION to $BRAINTREE_VERSION"
+fi
+
 # Check if zips exist first
 NEED_REGENERATE=false
 MISSING_ZIPS=false
@@ -375,6 +392,11 @@ if [ "$NEED_REGENERATE" = true ] || [ "$FORCE_REGENERATE" = true ]; then
     # Remove trailing comma and close the array
     CHECKSUMS_JSON=${CHECKSUMS_JSON%,}
     CHECKSUMS_JSON+="]"
+    
+    # Clean up Frameworks directory after zipping
+    echo "Cleaning up Frameworks directory..."
+    rm -rf "$XCFRAMEWORK_DIR"
+    echo "✅ Removed Frameworks directory"
 else
     # Use existing checksums
     CHECKSUMS_JSON=$EXISTING_CHECKSUMS_JSON
