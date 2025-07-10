@@ -1,6 +1,6 @@
 {
   "name": "braintree_ios_spm",
-  "version": "6.33.0",
+  "version": "6.34.0",
   "description": "Braintree iOS SDK Swift Package Manager distribution",
   "repository": {
     "type": "git",
@@ -19,69 +19,69 @@
   },
   "homepage": "https://github.com/MichaelLedger/braintree_ios_spm#readme",
   "braintree": {
-    "version": "6.33.0",
-    "url": "https://github.com/braintree/braintree_ios/releases/download/6.33.0/Braintree.xcframework.zip",
-    "mainChecksum": "93891300276aaaccbc03b0cbc1629339e4cccbfff16e7c7289994edb15b383be",
+    "version": "6.34.0",
+    "url": "https://github.com/braintree/braintree_ios/releases/download/6.34.0/Braintree.xcframework.zip",
+    "mainChecksum": "55343f52ac4fb968137134fe0d7a930dfc8591717cb6eaad1fc00f225cccab2d",
     "frameworks": [
       {
         "name": "BraintreeAmericanExpress",
-        "checksum": "0d0dfd59d106a29651a6256f816aca80658fd0d9834e3f40eaf252c51313cebd"
+        "checksum": "d41fa6df8e53842af5cc274ebea2b66df22e627bbee6c69fc0ebd223b26b4b6a"
       },
       {
         "name": "BraintreeApplePay",
-        "checksum": "9736c9e39a0d404d76fe6f13889f477578616dbcc0845d9c298b5b5c891adcaa"
+        "checksum": "bd57bdf2718c7dcdea54b61009683c54e2dc73ad58addb49d149fb62f173b278"
       },
       {
         "name": "BraintreeCard",
-        "checksum": "ff5843a07b5ec9de9730b22ccff068acdb7ef7956034c9c037f53ac17b048310"
+        "checksum": "ec26eb82a85689361ac9352ddfea39c9c5174da0e2e8befe0b0dd03f9dd67b29"
       },
       {
         "name": "BraintreeCore",
-        "checksum": "4f70d6a5c5ad97c1f93cff5823ce44371ae33cd85dd33150793a008303ee7645"
+        "checksum": "61f13e0e96b88500b7d5527518f4096df06a243411865424c3d374ed6e7e42fb"
       },
       {
         "name": "BraintreeDataCollector",
-        "checksum": "ff3d938c8273fae35af741bc39b74a9c457e2fed7921c148e8c66f9a74082ee7"
+        "checksum": "8578f53ca0887b986a6241aadf7424992ed98858bc9d282e9b65f69cc810cce5"
       },
       {
         "name": "BraintreeLocalPayment",
-        "checksum": "6849677846f0325aaee361407620c9a011cb154688600e361572f867c050c57e"
+        "checksum": "d083e3282dc407fc88d379b1c15af2b482b4c0e00436cfbe1d2901832fdc7e33"
       },
       {
         "name": "BraintreePayPal",
-        "checksum": "0f585e40219a1719f9b4ea1b1614c3bea77d7ee26ced819413e2e781046e37b7"
+        "checksum": "0f3b457e6327c5f1f9294b0905315cd99bd6eb6df8883d7e931f7d5e6c217afa"
       },
       {
         "name": "BraintreePayPalMessaging",
-        "checksum": "b3a69c8ae7f572a2bb345fbb6da0e6382390a19085597f40ad5822013f465ba9"
+        "checksum": "786241eb2e183708da5d6347cec3573b440a285ac4e088994cf2171c2e33dbe7"
       },
       {
         "name": "BraintreePayPalNativeCheckout",
-        "checksum": "295dc9116286a1deb2ca01e80430d981bb71e52149befcc088f31d96aa9b974c"
+        "checksum": "bafd6f004b576dbcaf20ad0fb428ae2ce2ccc4eab45b45da10a6bc9b37653c66"
       },
       {
         "name": "BraintreeSEPADirectDebit",
-        "checksum": "70c28c921bf200c86bcb4a90ad3f8b33966cc2720324174411460f7c37a4f15c"
+        "checksum": "bb7a1350f2f3a1092ffb7bf970a91e012a8e2da0851bff99cd6cc04143405364"
       },
       {
         "name": "BraintreeShopperInsights",
-        "checksum": "98088430c7858cb452115cd793fdc3d6392aaf1c74f86c4bbc1401458302769f"
+        "checksum": "4908bdd03009db95e69ae0f90e718eb528e44efa2520f5604c88096b68d0843e"
       },
       {
         "name": "BraintreeThreeDSecure",
-        "checksum": "cde5eebdcd5bf910436d59104b618a9fed261c622ba3823fb34694243c7c4828"
+        "checksum": "b56e42c709e2315a528fcb19861fe541b5ec3f9edd2f74029fef4227cea3998b"
       },
       {
         "name": "BraintreeVenmo",
-        "checksum": "0e48ecd79b8807cc00eecf44d851228de732974b0aec45712fc5d220fb6fb6b3"
+        "checksum": "dcd98519ccfd4ead6c232dbdfc0c6de189b904b40be1bf5d0974c56c1cd4cca0"
       },
       {
         "name": "CardinalMobile",
-        "checksum": "9def903abc495f2562f16a609fd1cd5924b103cb2c8eafc47984d42c82f97e81"
+        "checksum": "689968d29ba87c93325eef4ffc0a4b0d32b45b49ffded2b4aa49a890202e000a"
       },
       {
         "name": "PPRiskMagnes",
-        "checksum": "709c8fa3203fd7d8d84b0ab167a68ea1f2b27b6decf93672515736c4e2b467fb"
+        "checksum": "3fea5a5ae66836b7aec26c9d47fce2b62accefa4239fd99c7a4a156f2ef7defb"
       },
       {
         "name": "PayPalMessages",
